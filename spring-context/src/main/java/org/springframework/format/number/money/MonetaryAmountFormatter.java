@@ -16,12 +16,12 @@
 
 package org.springframework.format.number.money;
 
-import java.util.Locale;
+import org.springframework.format.Formatter;
+
 import javax.money.MonetaryAmount;
 import javax.money.format.MonetaryAmountFormat;
 import javax.money.format.MonetaryFormats;
-
-import org.springframework.format.Formatter;
+import java.util.Locale;
 
 /**
  * Formatter for JSR-354 {@link javax.money.MonetaryAmount} values,
