@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!--导入context中的property，专门用来抽取properties到spring.xml-->
+    <context:property-placeholder location="jdbc.properties"/>
+
+    <!--在Spring内部配置一个jdbc连接池对象-->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <!--name对应方法名字-->
+        <!--com.mysql.jdbc.Driver-->
+        <!--jdbc:mysql://localhost:3306/test-->
+        <!--root-->
+        <!--root-->
+        <property name="driverClassName" value="${jdbcDrive}"></property>
+        <property name="url" value="${jdbcUrl}"></property>
+        <property name="username" value="${jdbcUsername}"></property>
+        <property name="password" value="${jdbcPassword}"></property>
+
+
+    </bean>
+</beans>

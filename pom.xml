@@ -18,15 +18,13 @@
         <module>spring-aop</module>
         <module>spring-context</module>
         <module>spring-oxm</module>
-        <module>spring-demo-1</module>
         <module>spring-tx</module>
         <module>spring-jdbc</module>
         <module>spring-context-support</module>
         <module>spring-web</module>
         <module>spring-webmvc</module>
         <module>spring-my-test</module>
-        <module>spring-debug-test</module>
-        <module>spring-debug-placeholderConfigurationHolder</module>
+        <module>spring-my-test-cycle</module>
     </modules>
 
     <properties>

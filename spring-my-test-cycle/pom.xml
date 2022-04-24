@@ -9,11 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-my-test</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>placeHolderConfigurationSupport</module>
-    </modules>
+    <artifactId>spring-my-test-cycle</artifactId>
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -32,7 +28,12 @@
             <version>4.3.x</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.x</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
-
 
 </project>

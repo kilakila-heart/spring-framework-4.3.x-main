@@ -3,36 +3,35 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring</artifactId>
+        <artifactId>spring-my-test</artifactId>
         <groupId>org.springframework</groupId>
         <version>4.3.x</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-my-test</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>placeHolderConfigurationSupport</module>
-    </modules>
+    <artifactId>placeHolderConfigurationSupport</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
+
+        <!--导入阿里的数据库连接池-->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>4.3.x</version>
-            <scope>compile</scope>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.20</version>
         </dependency>
+
+        <!--导入数据库连接jar包-->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-instrument</artifactId>
-            <version>4.3.x</version>
-            <scope>compile</scope>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.26</version>
         </dependency>
+
     </dependencies>
-
-
 </project>
